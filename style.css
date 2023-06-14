@@ -125,7 +125,7 @@ ul {
   top: 0%;
   left: 0;
   z-index: -1;
-  transition: 0.3s ease-out;
+  transition: width 0.3s ease-out;
 }
 
 .secondary-button:hover:before {
@@ -188,4 +188,140 @@ header {
   width: 200px;
   height: 200px;
   background-color: red;
+}
+
+/* companies-section */
+
+.comapanies-header {
+  text-align: center;
+  margin-block: 30px; /* this is shorthand property to define margin top and margin bottom*/
+  color: var(--primary-text-color);
+}
+.logo {
+  height: 46px;
+}
+.logos {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*features-section*/
+
+.features-section {
+  padding: 80px var(--padding-inline-section) 0;
+  background-image: url(./assets/asset\ 34.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-header {
+  text-align: center;
+}
+
+.features-heading-text {
+  margin-bottom: 20px;
+}
+.features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.features-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.features-card img {
+  width: 60px;
+}
+
+.big-feature-section {
+  padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+  gap: 30px;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-desc {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.examples-cards {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(./assets/asset\ 36.jpeg);
+
+  transition: 0.2s ease-out;
+}
+
+.examples-area {
+  justify-content: space-between;
+  margin-block: 30px;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.examples-cards:hover {
+  box-shadow: 0px 0 10px #888;
+}
+
+.cta-container-section {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.cta-section {
+  background-color: #183b54;
+  padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-container-section p {
+  color: white;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+
+.link-colum {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container {
+  /* align-items: flex-start; */
+  justify-content: space-between;
+}
+
+.subfooter {
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.subfooter-container {
+  justify-content: center;
+  gap: 30px;
 }
